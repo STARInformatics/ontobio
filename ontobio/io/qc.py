@@ -456,9 +456,9 @@ class GoRule46(GoRule):
         goterm = annotation[4]
         objectid = annotation[1]
         
-        if goterm in self.self_binding_terms:
-            # Then we're in the self-binding case, and check if object ID is in withfrom
-            return self._result(objectid in withfroms)
+        #if goterm in self.self_binding_terms:
+        #    # Then we're in the self-binding case, and check if object ID is in withfrom
+        #    return self._result(objectid in withfroms)
             
         return self._result(True)
 
